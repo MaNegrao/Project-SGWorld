@@ -1,0 +1,424 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+/****************Header****************/
+
+body{
+	background-color: black;
+}
+
+
+header #top, footer{
+	font-family: 'Bangers', cursive;
+	background-color: #ff3000;
+	text-align: center;
+	padding: 1px;
+	overflow: hidden;
+}
+
+header #search{
+	font-family: 'Bangers', cursive;
+	width: 150px;
+	padding: 8px;
+	margin: 10px;
+	border-color: transparent;
+	border-radius: 3px;
+	float: left;
+}
+
+#bsearch{
+	display: none;
+}
+
+#top img{
+	padding: 7px;
+}
+
+
+#top #buton{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 10px;
+}
+
+#buton input[type=button]{
+	font-family: 'Bangers', cursive;
+	padding: 9px;
+	margin-right: 3px;
+	border-color: transparent;
+	background-color: white;
+	border-radius: 3px;
+}
+
+#buton input[type=button]:hover{
+	background-color: #c4c4bb;
+}
+
+#cart-header{
+	display: none;	
+}
+
+/*************NAV***********/
+
+.b-menu-cart{
+	background-color: #5a5858;
+	padding: 10px;
+}
+
+.b-menu-cart button{
+	position: static;
+}
+
+.b-menu-cart input{
+	position: absolute;
+	right: 0;
+	margin-right: 10px;
+	margin-right: 13px;
+}
+
+.b-menu-cart input, .b-menu-cart button{
+	font-family: 'Bangers', cursive;
+	padding: 7px;
+	width: 50px;
+	border-color: transparent;
+	background-color: white;
+	border-radius: 3px;
+}
+.b-menu-cart input:hover, .b-menu-cart button:hover{
+	background-color: #c4c4bb;
+}	
+
+.menu-principal{
+	font-family: 'Bangers', cursive;
+	display: none;
+}
+
+.menu-principal ul{
+	overflow: hidden;
+	background-color: #222211;
+}
+
+.menu-principal li{
+	list-style-type: none;
+	padding: 10px;
+}
+
+.menu-principal li:hover{
+	background-color: #9a9898;
+}
+
+.menu-principal a{
+	padding: 14px 16px;
+	font-size: 18px;
+	color: white;
+}
+
+/*************MAIN*************/
+
+.fotos{
+	background-color: #ff3000;
+	padding: 20px;
+	padding-top: 20px;
+}
+
+.fotos h2{
+	font-family: 'Bangers', cursive;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.fotos figure{
+	max-width: 80%;
+	display: block;
+}
+
+.fotoPol .polaroid:hover{
+	box-shadow: 2px 2px 4px white;
+}
+
+div.polaroid{
+	width: 90%;
+	background-color:#222211;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 25px;
+	margin-left: 20px;
+}
+
+div.container{
+	font-family: 'Allan', cursive;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	padding: 10px 20px;
+}
+
+.vid{
+	width: 100%;
+	height: 188px;
+	background-color: black;
+	border: none;
+}
+
+/*********Tickets*************/
+
+.tab{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    background-color: #5a5858;
+}
+
+.tab button {
+	font-family: 'Bangers', cursive;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #9a9898;
+}
+
+.tab button.active {
+    background-color: #9a9898;
+}
+
+.tabcontent {
+	font-family: 'Allan', cursive;
+	font-size: 23px;
+	background-color: #b30000;
+    animation: fadeEffect 1s;
+    color: white;
+    display: none;
+    padding: 10px 12px;
+    border-top: none;
+    text-align: justify;
+}
+
+/********NEWS e MAP***********/
+
+
+ .news-line h2, .tickets h2{
+	padding: 10px;
+	text-align: center;
+	font-family: 'Bangers', cursive;
+	background-color: #222211;
+	color: white;
+	margin-bottom: 0;
+}
+
+.news-line{
+	background-color: #222211;
+
+}
+.news{
+	display: flex;
+	background-color: #222211;
+	flex-direction: column;
+	padding-bottom: 10px;
+}
+
+.news .cols{
+	padding: 20px;
+	background-color: #ff3000;
+	font-family: 'Allan', cursive;
+	font-size: 22px;
+	text-align: justify;
+	border: 3px solid black;
+	margin-top: 0;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px; 
+}
+
+
+/********Map*******/
+	
+.map h2{
+	padding: 30px;
+	font-size: 1.5em;
+	font-family: 'Bangers', cursive;
+}
+
+.map{
+	text-align: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.map iframe{
+	display: flex;
+	width: 80%;
+	height: 200px;
+	border: 5px solid #ff3300;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+/**********Footer*******/
+
+footer p{
+	padding:10px;
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+footer li{
+	display: inline;
+	margin-left: 20px;
+}
+
+/***********Media Querys**********/
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media only screen and (min-width: 900px){
+   
+   /**********Header e Nav*******/
+
+    header #search{
+    	position: absolute;
+		top: 0;
+		left: 0;
+    }
+
+    #exibeMenu{
+    	display: none;
+    }
+    .menu-principal{
+    	font-family: 'Bangers', cursive;
+    	display: block;
+    	border: 10px;
+    }
+
+    .menu-principal li{
+    	display: inline-block;
+    	padding: 15px;
+
+    }
+
+    .b-menu-cart{
+    	display: none;
+    }
+
+    #cart-header{
+    	display: inline;
+    	position: absolute;
+    	right: 0;
+    	margin-top: 168px;
+    	margin-right: 20px;
+    }
+
+    /*************Fotos*********/
+
+    body{
+    	background-color: black;
+    }
+
+    .news-line{
+    	background-color: black;
+    }
+
+    .fotos h2{
+    	font-size: 2.5em;
+    }
+
+    .fotoPol{
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: space-between;
+    	margin-right: 20px;
+    	padding: 0;	
+    }
+
+    .polaroid{
+    	margin-left: 20px;
+    }
+
+    div#img1, div#img2, div#img3{
+    	width: 28%
+    }
+
+    div#img3 img, div#img2 img, div#img3 img{
+    	height: 245px;
+    }
+
+/*************TICKES E VIDEO********/
+
+    #vid{
+    	float: left;
+    	width: 45%;
+    	overflow: hidden;
+    	margin-top: 40px;
+    }
+
+    #vid .vid{
+    	height: 295px;
+    }
+
+    .tickets{
+    	width: 45%;
+    	float: left;
+    	margin-top: 20px;
+    	margin-left: 5%;
+    	background-color: black;
+    }
+
+/********NEWS***********/ 
+
+    .news-line h2{
+    	font-size: 2.5em;	
+    	clear: left;
+    }
+
+    .news{
+    	display: flex;
+    	flex-direction: row;
+    	clear: left;
+    }
+
+/*******FOOTER AND MAP******/
+	
+	.map h2{
+		font-size: 2.5em;
+	}
+
+    .map iframe{
+    	height:400px;
+    }
+
+    footer{
+    	clear: left;
+    }
+}

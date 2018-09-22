@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Soft & Gaming World</title>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="img/headlogo.png" type="image/x-icon"/>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Allan" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div id="top">
+				<input id="search" type="search" placeholder="Search">
+				<input type="submit" name="Enviar" id="bsearch">
+				<a href="index.html"><img src="img/LOGO2.png" alt="Logo do Parque onde há um jogador e embaixo o nome do Parque"></a>
+				<div id="buton">
+					<input type="button" value="Sign Up" onclick="window.location.href='signup.html'">	
+					<input type="button" value="Sign In" onclick="window.location.href='#'">
+				</div>
+				<a id="cart-header" href="#"><img src="img/cart.png" width="60" alt="icone de carrinho"></a>
+			</div>
+			<div class="bottom">
+				<div class="b-menu-cart">
+					<button id="exibeMenu" onclick="exibeMenu()">MENU</button>
+					<input type="button" value="Cart" onclick="window.location.href='#'">
+				</div>
+				<nav class="menu-principal">
+					<ul>
+						<li><a href="#">About Park</a></li>
+						<li><a href="#">Tickets</a></li>
+						<li><a href="thgdo.html">Things to Do</a></li>
+						<li><a href="#">Shop</a></li>
+						<li><a href="syspark.html">Park's System</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="fotos">
+				<h2>Images of The Best Park!</h2>
+				<div class="fotoPol">
+					<div class="polaroid" id="img1">
+						<img src="img/imghome1.jpeg" alt="Vista aerea do parque" style="width:100%">
+						<div class="container">
+					  		<p>Vista aerea do Parque</p>
+					  	</div>
+					</div>
+					<div class="polaroid" id="img2">
+						<img src="img/imghome2.jpg" alt="Portaria do parque" style="width:100%">
+						<div class="container">
+							<p>Portaria do parque</p>
+						</div>
+					</div>
+					<div class="polaroid" id="img3">
+						<img src="img/imghome3.jpg" alt="X-wing" style="width:100%">
+						<div class="container">
+					    	<p>X-wing tematica do parque</p>
+						</div>
+					</div>
+				</div>
+				<div class="polaroid" id="vid">
+					<iframe class='vid' src="https://www.youtube.com/embed/JDZMoZkZCXw"></iframe>
+					<div class="container">
+					    <p>Projeto em video do parque</p>
+					</div>
+				</div>
+			</section>
+			<section class="tickets">
+				<h2>Tickets</h2>
+				<div class="tab">
+					<button class="tablinks" onclick="openTab(event, 'std')" id="defaultOpen">Standard</button>
+					<button class="tablinks" onclick="openTab(event, 'std-prm')">Standard Premium</button>
+					<button class="tablinks" onclick="openTab(event, 'gld')">Gold</button>
+					<button class="tablinks" onclick="openTab(event, 'gld-prm')">Gold Premium</button>
+				</div>
+					<div id="std" class="tabcontent">
+						<p>The Standard ticket is the more economy ticket, perfect for people who want adventure but do not want to pay too much for it. This ticket is for sale for only 30$.</p>
+					</div>
+					<div id="std-prm" class="tabcontent">
+						<p>The Standard Premium ticket is the best ticket for people who do not want to miss anything in the park. This ticket is for sale for only 50$.</p> 
+					</div>
+					<div id="gld" class="tabcontent">
+						<p>The Gold ticket is more exquisite, with the right to several events and much times in adventures. This ticket is for sale for only 80$.</p>
+					</div>
+					<div id="gld-prm" class="tabcontent">
+						<p>Gold Premium is the best ticket, is for the best peoples and guarantees everthing for de best of the park. This ticket is for sale for only 100$.</p>
+					</div>
+			</section>
+			<section class="news-line">
+				<h2>Novidades</h2>
+				<div class="news">
+					<div class="cols">
+						<p>Uma nova atração está chegando, um simulador de batalha onde o visitante pilota uma TIE Fighter!! Sinta-se um combatente do imperio contra a rebelião!</p>
+					</div>
+					<div class="cols">
+						<p>Em setembro todos os ingressos estarão com 25% de desconto, venha se divertir com as maiores franquias do mundo nerd e gamer. Crianças até 13 anos pagam meia entrada!</p>
+					</div>
+					<div class="cols">
+						<p>Saudações, este mês a arena principal receberá a final do campeonato The International de Dota 2! Prepare seu coração para o campeonato com maior premiação de todos os tempos!</p>
+					</div>
+					<div class="cols">
+						<p>Um sucesso de publico, a terra nordica de Asgardh agora conta com mais uma diversão para você e sua familia, o palacio do Pai de Todos, Odin, estará aberto para visitação por tempo limitado!</p>
+					</div>
+				</div>
+			</section>
+			<section class="map">
+                <h2>Soft & Gaming World - Belgium</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5012.215789323875!2d4.380078076814362!3d51.08801628122151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3ee2f461774e9%3A0xf12af43f2c284d2f!2sTomorrowland!5e0!3m2!1spt-BR!2sbr!4v1537147138406" allowfullscreen></iframe>
+			</section>
+		</main>
+		<footer>
+			<p>Soft & Gaming World 2018 | Todos os Direitos Reservados</p>
+			<ul class="social">
+			<li><a href="#"><img src="img/facebook.png" alt="Facebook" width="30"></a></li>
+			<li><a href="#"><img src="img/twitter.png" alt="Twitter" width="30"></a></li>
+			<li><a href="#"><img src="img/instagram.png" alt='Instagram' width="30"></a></li>
+			</ul>
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
+
+</html>
