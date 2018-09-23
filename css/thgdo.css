@@ -1,0 +1,142 @@
+main{
+	color: white;
+}
+
+.sub-menu{
+	background: url(../img/park.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 200px;
+}
+
+
+.sub-menu ul{
+	display: flex;
+	flex-direction: row;
+}
+
+.sub-menu li{
+	list-style-type: none;
+	margin-top: 150px;
+	padding: 10px;
+	font-family: 'Bangers', cursive;
+}
+
+.sub-menu a{
+	color: #ff3000;
+	font-size: 23px;
+	text-shadow: 3px 3px 3px black;
+}
+
+.sub-menu a:hover{
+	text-shadow: 3px 3px 3px gray;
+}
+
+.meio h2{
+	font-family: 'Bangers', cursive;
+	background-color: #ff3000;
+	text-align: center;
+	color: black;
+	padding: 6px;
+	overflow: hidden;
+}
+
+.tabcontent{
+	padding-top: 20px;
+}
+
+.polaroid img{
+	height: 200px;
+}
+
+#tabelas{
+	font-family: 'Bangers', cursive;
+	text-align: center;
+	padding: 6px;
+	overflow: hidden;
+	background-color: #222211;
+	color: #ff3000;
+}
+
+table{
+	margin: 5px;
+	width: 98%;
+	border-collapse: collapse;
+}
+
+th{
+	background-color: #ff3000;
+	font-family: "Bangers", cursive;
+	color: black;
+}
+
+td, th{
+	font-family: 'Allan', cursive;
+	padding: 10px;
+	text-align: left;
+}
+
+tr:nth-child(even){
+	background-color: #222211
+}
+
+
+@media only screen and (min-width: 900px){
+
+	.sub-menu{
+		height: 600px;
+	}
+
+	.sub-menu li{
+		margin-top: 500px;
+		padding: 20px;
+	}
+
+	.sub-menu a{
+		font-size: 2em;
+	}
+
+	.meio{
+		padding: 30px;	
+		float: left;
+		width: 53%; 
+		margin-bottom: 50px;
+	}
+
+	.tabcontent{
+		padding-top: 20px;
+		padding-right: 0px;
+		padding-left: 20px;
+	}
+
+	.polaroid img{
+		height: 290px;
+	}
+
+	.tabela-at{
+		padding: 25px;
+	}
+
+	table{
+		float: right;
+		width: 45%;
+		height: 300px;
+	}	
+
+	td, th, .container p, .tablinks{
+		font-size: 1.3em;
+	}
+
+	h2{
+		font-size: 2em;
+	}
+
+	#tabelas{
+		display: none;
+	}
+
+	footer{
+		clear: left;
+	}
+}
