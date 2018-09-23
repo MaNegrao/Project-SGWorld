@@ -135,8 +135,4 @@ tr:nth-child(even){
 	#tabelas{
 		display: none;
 	}
-
-	footer{
-		clear: left;
-	}
 }
