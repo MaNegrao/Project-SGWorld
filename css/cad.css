@@ -11,6 +11,10 @@ main{
 	overflow: hidden;
 }
 
+input:infocus{
+	border: 10px #ff3000;
+}
+
 #titulos h3, h4{
 	font-family: 'Bangers', cursive;
 	text-align: center;
@@ -22,32 +26,30 @@ h4{
 }
 
 .form-item{
-	padding: 5px;
 	margin-left: 15px;
-	padding-bottom: 10px;
+	padding-bottom: 8px;
 }
 
 .label{
 	text-align: left;
-	margin-right: 10px;
+	margin-right: 10px
 }
 
-.equals{
-	display: flex;
-	flex-direction: row;
-	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
+main input:hover{
+	background-color: #c4c4bb;
 }
 
-.form-item input[type='text'], .form-item input[type=numeric], .form-item select{
+
+.form-item input[type='text'], .form-item input[type=number], .form-item select, .form-item input[type=email], input[type=date], input[type="Password"]{
 	border: none;
 	border-radius: 2px;
+	width: 95%;
 }
 
 .form-item, input[placeholder], .form-item select{
 	font-family: 'Allan', cursive;
 	padding: 5px;
+	margin-bottom: 10px;
 }
 
 #docs input:disabled{
@@ -58,25 +60,15 @@ h4{
 	display: inline;
 }
 
-#docs span{
-	margin-left: 5px;
+span{
+	color: red;
 }
 
-#nacE, #nacN, #doeY, #doeN{
+
+#nacE, #nacN{
 	margin: 10px;
 }
 
-#terms{
-	padding: 5px;
-}
-
-#compl{
-	width: 270px;
-}
-
-#rua{
-	width: 303px;
-}
 
 .botoes{
 	text-align: center;
@@ -104,4 +96,44 @@ h4{
 .botoes #botaoreset{
 	background-color: yellow;
 	color: black;
+}
+
+
+@media only screen and (min-width: 900px){
+
+	main{
+		box-sizing: border-box;
+		text-align: center;
+	}
+
+	h2{
+		font-size: 2.5em;
+	}
+
+	h3{
+		font-size: 1.8em;
+	}
+
+	h4{
+		font-size: 1.5em;
+	}
+
+	form{
+	}
+
+	.equals{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.form-item{
+		text-align: left;
+		width: 40%;
+		font-size: 1.2em;
+	}	
+
+	input[placeholder]{
+		padding:15px;
+	}
 }
