@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Allan" rel="stylesheet">
+		</script>
 	</head>
 	<body>
 		<header>
@@ -74,7 +75,7 @@
 				<div class="equals">
 					<div class="form-item" id="docs">
 						<label for="cpf" class="label">Document/Passaport:</label>
-						<input type="number" name="cpf" id="cpf" size="11" placeholder="00000000000">
+						<input type="text" name="cpf" id="cpf" onkeydown="javascript: fMasc( this, mCPF );" placeholder="00000000000" disabled>
 						<input type="text" name="passp" id="passp" size="20" placeholder="Passaport" disabled>
 						<br><span id="mensagem-doc"></span>
 						<span class="msg-erro" id="msg-doc"></span>
