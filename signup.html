@@ -14,7 +14,7 @@
 	<body>
 		<header>
 			<div id="top">
-				<input id="search" type="search" placeholder="Search">
+				<input id="home" type="button" value="Home Page" onclick="window.location.href='index.html'">
 				<a href="index.html"><img src="img/LOGO2.png" alt="Logo do Parque onde há um jogador e embaixo o nome do Parque"></a>
 				<div id="buton">
 					<input type="button" value="Sign Up" onclick="window.location.href='signup.html'">	
@@ -61,7 +61,7 @@
 				<div class="equals">
 					<div class="form-item">
 						<label for="nasc" class="label">Date of Birth:</label>
-						<input type="date" name="nasc" id="nasc" placeholder="dd/mm/yyyy">
+						<input type="date" name="nasc" id="nasc">
 						<span class="msg-erro" id="msg-date"></span>
 					</div>
 					<div class="form-item" id="nation">
@@ -289,8 +289,8 @@
 						<span class="msg-erro" id="msg-phone"></span>
 					</div>
 					<div class="form-item">
-						<label for="Ephone" class="label">Emergency Phone:</label>
-						<input type="number" name="Ephone" id="ephone" size="14" placeholder="+00 00000000">
+						<label for="ephone" class="label">Emergency Phone:</label>
+						<input type="number" name="ephone" id="ephone" size="14" placeholder="+00 00000000">
 						<span class="msg-erro" id="msg-ephone"></span>
 					</div>
 				</div>

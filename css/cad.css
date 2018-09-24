@@ -32,7 +32,7 @@ h4{
 
 .label{
 	text-align: left;
-	margin-right: 10px
+	margin-right: 10px;
 }
 
 main input:hover{
@@ -46,9 +46,10 @@ main input:hover{
 	width: 95%;
 }
 
-.form-item, input[placeholder], .form-item select{
+
+.form-item, input, select{
 	font-family: 'Allan', cursive;
-	padding: 5px;
+	padding: 10px;
 	margin-bottom: 10px;
 }
 
@@ -130,10 +131,10 @@ span{
 	.form-item{
 		text-align: left;
 		width: 40%;
-		font-size: 1.2em;
+		font-size: 1.3em;
 	}	
 
-	input[placeholder]{
+	input, select{
 		padding:15px;
 	}
 }

@@ -1,4 +1,4 @@
-main{
+section{
 	color: white;
 }
 
@@ -33,7 +33,7 @@ main{
 	text-shadow: 3px 3px 3px gray;
 }
 
-.meio h2{
+.attract h2{
 	font-family: 'Bangers', cursive;
 	background-color: #ff3000;
 	text-align: center;
@@ -97,7 +97,7 @@ tr:nth-child(even){
 		font-size: 2em;
 	}
 
-	.meio{
+	.attract{
 		padding: 30px;	
 		float: left;
 		width: 53%; 
