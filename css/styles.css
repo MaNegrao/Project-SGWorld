@@ -22,18 +22,15 @@ header #top, footer{
 	overflow: hidden;
 }
 
-header #search{
+header #home{
 	font-family: 'Bangers', cursive;
-	width: 150px;
+	width: 130px;
 	padding: 8px;
 	margin: 10px;
 	border-color: transparent;
+	background-color: white;
 	border-radius: 3px;
 	float: left;
-}
-
-#bsearch{
-	display: none;
 }
 
 #top img{
@@ -57,7 +54,7 @@ header #search{
 	border-radius: 3px;
 }
 
-#buton input[type=button]:hover{
+#buton input[type=button]:hover, #home:hover{
 	background-color: #c4c4bb;
 }
 
@@ -201,7 +198,7 @@ div.container{
     animation: fadeEffect 1s;
     color: white;
     display: none;
-    padding: 10px 12px;
+    padding: 10px 10px;
     border-top: none;
     text-align: justify;
 }
@@ -307,10 +304,11 @@ footer li{
    
    /**********Header e Nav*******/
 
-    header #search{
+    header #home{
     	position: absolute;
 		top: 0;
 		left: 0;
+		background-color: white;
     }
 
     #exibeMenu{

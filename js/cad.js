@@ -200,7 +200,7 @@ function validaCadastro(){
 	var terms = document.getElementById("terms");
 	var erro_terms = document.getElementById("msg-terms");
 	if(!terms.checked){
-		erro_terms.innerHTML = "x	You must agree to the Terms and Conditions to continue.";
+		erro_terms.innerHTML = "You must agree to the Terms and Conditions to continue.";
 		erro_terms.style.display = 'block';
 		contErro+=1;
 	}
