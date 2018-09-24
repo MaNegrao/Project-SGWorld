@@ -400,6 +400,10 @@ footer li{
     	clear: left;
     }
 
+    .cols{
+    	width: 25%;
+    }
+
     .news{
     	display: flex;
     	flex-direction: row;
