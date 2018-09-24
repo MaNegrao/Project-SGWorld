@@ -11,7 +11,7 @@ function exibeMenu(){
 document.body.onresize = function(){
     var w = window.outerWidth;
     var menu = document.getElementsByClassName("menu-principal")[0];
-    if (w >= 1000){
+    if (w >= 900){
         menu.style.display = 'block';
     } else{
         menu.style.display = 'none';        
