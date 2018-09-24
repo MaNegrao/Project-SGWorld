@@ -1,9 +1,11 @@
 function exibeMenu(){
     var menu = document.getElementsByClassName('menu-principal')[0];
-    if(menu.style.display == 'none')
+    if(menu.style.display == 'block'){
+            menu.style.display = 'none';
+    }
+    else{
         menu.style.display = 'block';
-    else
-        menu.style.display = 'none';
+    }
 };
 
 document.body.onresize = function(){
