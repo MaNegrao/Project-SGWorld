@@ -278,13 +278,8 @@ footer{
 	align-items: center;
 }
 
-footer ul{
-	list-style-type: none;
-	padding: 0;
-}
 
-footer li{
-	display: inline;
+.social a{
 	margin-left: 20px;
 }
 
