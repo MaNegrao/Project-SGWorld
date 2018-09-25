@@ -4,7 +4,7 @@ document.getElementById('nacE').onclick = function(){
 	document.getElementById("cpf").value = "";
 	document.getElementById("passp").disabled = false;
 	document.getElementById("nacio").disabled = false;
-	document.getElementById("mensagem-doc").innerHTML = "Please, Write your Passaport and Select your place of birth.";
+	document.getElementById("label-doc").innerHTML = "Passaport:";
 };
 
 document.getElementById('nacN').onclick = function(){
@@ -12,7 +12,7 @@ document.getElementById('nacN').onclick = function(){
 	document.getElementById("passp").value = "";
 	document.getElementById("passp").disabled = true;
 	document.getElementById("nacio").disabled = true;
-	document.getElementById("mensagem-doc").innerHTML = "Por favor, Digite o seu CPF.";
+	document.getElementById("label-doc").innerHTML = "CPF:";
 };
 
 function fMasc(objeto,mascara){
@@ -93,13 +93,24 @@ function validaCadastro(){
 	var ncpf = document.getElementById("cpf");
 	var npassp = document.getElementById("passp");
 	var erro_doc = document.getElementById("msg-doc");
-	if((ncpf.value == "" ) && (npassp.value="")){
+	if(((ncpf.value == "" ) && (npassp.disabled)) || ((ncpf.disabled) && (npassp.value == ""))){
 		erro_doc.innerHTML = "Please, enter your document number.";
 		erro_doc.style.display = 'block';
 		contErro+=1;
 	}
 	else{
 		erro_doc.style.display = "none";
+	}
+
+	//valida naciondalidade
+	var nacio = document.getElementById('nacio');
+	var erro_nacio = document.getElementById('msg-nacio');
+	if((nacio.value=" ") && (ncpf.disabled)){
+		erro_nacio.innerHTML = "Please, Select your place of birth."
+		erro_nacio.style.display = 'block';
+	}
+	else{
+		erro_nacio.style.display = "none";
 	}
 
 	//valida cep/zip

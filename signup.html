@@ -42,9 +42,7 @@
 			</div>
 		</header>
 		<main class="cadastro">
-			<div id="titulos">
-				<h2>Register now to initiate your adventure</h2>
-			</div>
+			<h2>Register now to initiate your adventure</h2>
 			<form id="form-cadastro">
 				<h4>Personal Informations:</h4>
 				<div class="equals">
@@ -60,29 +58,29 @@
 					</div>
 				</div>
 				<div class="equals">
-					<div class="form-item">
-						<label for="nasc" class="label">Date of Birth:</label>
-						<input type="date" name="nasc" id="nasc">
-						<span class="msg-erro" id="msg-date"></span>
-					</div>
 					<div class="form-item" id="nation">
 						<label class="label">Nationality:</label>
 					    <label><input type="radio" name="nac" value="es" id="nacE">Foreign</label>
 					    <label><input type="radio" name="nac" value="na" id="nacN">Native</label>
 					    <span class="msg-erro" id="msg-nation"></span>
 					</div>
+					<div class="form-item">
+						<label for="nasc" class="label">Date of Birth:</label>
+						<input type="date" name="nasc" id="nasc">
+						<span class="msg-erro" id="msg-date"></span>
+					</div>
 				</div>
 				<div class="equals">
 					<div class="form-item" id="docs">
-						<label for="cpf" class="label">Document/Passaport:</label>
+						<label for="cpf" id="label-doc" class="label"></label>
 						<input type="text" name="cpf" id="cpf" onkeydown="javascript: fMasc( this, mCPF );" placeholder="00000000000" disabled>
 						<input type="text" name="passp" id="passp" size="20" placeholder="Passaport" disabled>
-						<br><span id="mensagem-doc"></span>
 						<span class="msg-erro" id="msg-doc"></span>
 					</div>
 					<div class="form-item">
 						<label for="nacio" class="label">Select your Nationality:</label>
 						<select name="nacio" id="nacio" disabled>
+							<option value=" " disabled selected></option>
 							<option value="Afghanistan">Afghanistan</option> 
 							<option value="Albania">Albania</option> 
 							<option value="Algeria">Algeria</option> 
@@ -323,6 +321,7 @@
 							<option value="Zambia">Zambia</option> 
 							<option value="Zimbabwe">Zimbabwe</option>
 						</select>
+						<span class="msg-erro" id="msg-nacio"></span>
 					</div>
 				</div>
 				<h4>Address:</h4>

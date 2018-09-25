@@ -2,13 +2,14 @@ main{
 	color: white;
 }
 
-#titulos h2{
+h2{
 	font-family: 'Bangers', cursive;
 	background-color: #ff3000;
 	text-align: center;
 	color: black;
 	padding: 6px;
 	overflow: hidden;
+	margin-bottom: 50px;
 }
 
 input:infocus{
@@ -23,6 +24,8 @@ input:infocus{
 
 h4{
 	text-align: left;
+	margin-top: 30px;
+	margin-bottom: 30px;	
 }
 
 .form-item{
@@ -46,6 +49,14 @@ main input:hover{
 	width: 95%;
 }
 
+
+select:disabled{
+	background-color: #222211;
+}
+
+select:enabled{
+	background-color: white;
+}
 
 .form-item, input, select{
 	font-family: 'Allan', cursive;
