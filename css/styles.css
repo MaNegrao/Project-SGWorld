@@ -131,7 +131,7 @@ header #home{
 	margin-bottom: 20px;
 }
 
-.fotos figure{
+.fotos figure .vid{
 	max-width: 80%;
 	display: block;
 }
@@ -363,8 +363,8 @@ footer{
     	width: 28%
     }
 
-    div#img3 img, div#img2 img, div#img3 img{
-    	height: 245px;
+    div#img1 img, div#img2 img, div#img3 img{
+    	height: 83%;
     }
 
 /*************TICKES E VIDEO********/
@@ -377,7 +377,7 @@ footer{
     }
 
     #vid .vid{
-    	height: 295px;
+    	height: 300px;
     }
 
     .tickets{
