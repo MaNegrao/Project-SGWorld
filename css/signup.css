@@ -1,6 +1,12 @@
 main{
 	color: white;
 }
+ 
+h5{
+	text-align: left;
+	font-family: 'Allan', cursive;
+	font-size: 1.2em;
+} 
 
 h2{
 	font-family: 'Bangers', cursive;
@@ -10,6 +16,7 @@ h2{
 	padding: 6px;
 	overflow: hidden;
 	margin-bottom: 50px;
+	font-size: 2em;
 }
 
 input:infocus{
@@ -33,7 +40,12 @@ h4{
 	padding-bottom: 8px;
 }
 
+.form-login .form-item input[type=email], .form-login .form-item input[type=password]{
+	text-align: center;
+}
+
 .label{
+	color: white;
 	text-align: left;
 	margin-right: 10px;
 }
@@ -42,8 +54,7 @@ main input:hover{
 	background-color: #c4c4bb;
 }
 
-
-.form-item input[type='text'], .form-item input[type=number], .form-item select, .form-item input[type=email], input[type=date], input[type="Password"]{
+.form-item input[type='text'], .form-item input[type=number], .form-item select, .form-item input[type=email], input[type=date], input[type="Password"], textarea{
 	border: none;
 	border-radius: 2px;
 	width: 95%;
@@ -58,7 +69,7 @@ select:enabled{
 	background-color: white;
 }
 
-.form-item, input, select{
+.form-item, input, select, textarea{
 	font-family: 'Allan', cursive;
 	padding: 10px;
 	margin-bottom: 10px;
@@ -72,7 +83,7 @@ select:enabled{
 	display: inline;
 }
 
-span{
+span, h5{
 	color: red;
 }
 
@@ -80,8 +91,6 @@ span{
 #nacE, #nacN{
 	margin: 10px;
 }
-
-
 .botoes{
 	text-align: center;
 	margin: 10px;
@@ -96,8 +105,21 @@ span{
 	width: 100px;
 }
 
-.botoes input[type=button]:hover{
-	background-color: #c4c4bb;
+
+input[type="file"] {
+    display: none;
+}
+
+
+.custom-file-upload{
+	font-family: 'Bangers', cursive;
+	color: white;
+	border-radius: 3px;
+    border: 1px solid transparent;
+    background-color: red; 
+    display: inline-block;
+    padding: 7px 15px;
+    cursor: pointer;
 }
 
 .botoes #botaoconfirm{
@@ -108,6 +130,18 @@ span{
 .botoes #botaoreset{
 	background-color: yellow;
 	color: black;
+}
+
+#loginbut{
+	text-align: left;
+}
+
+#login{
+	text-align: center;
+}
+
+#termss{
+	margin-top: 250px;
 }
 
 

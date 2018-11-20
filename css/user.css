@@ -1,0 +1,47 @@
+h2{
+	font-family: 'Bangers', cursive;
+	background-color: #ff3000;
+	text-align: center;
+	color: black;
+	padding: 6px;
+	overflow: hidden;
+	font-size: 3em;
+}
+
+.menuUser ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.menuUser li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+.menuUser li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.content{
+	display: flex;
+}
+
+.menuUser{
+	margin-top: 3%;
+	margin-left: 8%;
+	margin-bottom: 3%;
+}
+
+.infoUser{
+	margin-right: 8%;
+	margin-left: 4%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}

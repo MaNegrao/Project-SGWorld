@@ -117,6 +117,13 @@ header #home{
 	color: white;
 }
 
+.msgsession{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 1%;
+	margin-top: 4%;
+}
 /*************MAIN*************/
 
 .fotos{

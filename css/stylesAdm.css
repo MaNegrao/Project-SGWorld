@@ -1,0 +1,282 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none; 
+}
+
+body{
+	background-color: black;
+}
+
+h4{
+    color: red;
+}
+
+header #top, footer{
+	font-family: 'Bangers', cursive;
+	background-color: #ff3000;
+	text-align: center;
+	padding: 1px;
+	overflow: hidden;
+}
+
+header #home{
+	font-family: 'Bangers', cursive;
+	width: 170px;
+	padding: 8px;
+	margin: 10px;
+	border-color: transparent;
+	background-color: white;
+	border-radius: 3px;
+	float: left;
+}
+
+.menu-principal{
+	font-family: 'Bangers', cursive;
+	display: none;
+}
+
+.menu-principal ul{
+	overflow: hidden;
+	background-color: #222211;
+}
+
+.menu-principal li{
+	list-style-type: none;
+	padding: 10px;
+}
+
+.menu-principal li:hover{
+	background-color: #9a9898;
+}
+
+.menu-principal a{
+	padding: 14px 16px;
+	font-size: 18px;
+	color: white;
+}
+
+.link{
+    margin-left: 20px;
+    color: white;
+    padding: 10px;
+    background-color: #b30000;
+}
+
+.link:hover{
+    background-color: #9a9898;
+}
+
+th a{
+    color: #222211;
+}
+
+td a{
+    color: white;
+}
+
+th a:hover, td a:hover{
+    color: #9a9898;
+}
+
+th{
+    background-color: #ff3000;
+    font-family: "Bangers", cursive;
+    color: black;
+}
+
+td{
+     border-bottom: 0.2px solid #d6d6c2;
+}
+
+table{
+    width: 95%;
+    margin: 30px;
+    border-collapse: collapse;
+}
+
+
+th, td{
+    font-family: 'Allan', cursive;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+tr:nth-child(even){
+    background-color: #222211;
+}
+
+
+#nomeAttr{
+    width: 12%;
+}
+
+#tipoAttr{
+    width: 10%;
+}
+
+#dscAttr{
+    width: 58%;
+}
+
+#capacAttr{
+    width: 10%;
+}
+
+#actionAttr{
+    width: 10%;
+}
+
+#qtdProject{
+    width: 13%;
+}
+
+#dscProject{
+    width: 52%
+}
+
+
+#imgCad img{
+    padding: 10px;
+    width: 490px;
+    height: 300px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+h1{
+	font-size: 3em;
+	padding: 10px;
+}
+
+
+
+
+@media only screen and (min-width: 900px){
+   
+   /**********Header e Nav*******/
+
+    header #home{
+    	position: absolute;
+		top: 0;
+		left: 0;
+		background-color: white;
+    }
+
+    #exibeMenu{
+    	display: none;
+    }
+    .menu-principal{
+    	font-family: 'Bangers', cursive;
+    	display: block;
+    	border: 10px;
+    }
+
+    .menu-principal li{
+    	display: inline-block;
+    	padding: 15px;
+
+    }
+
+    .b-menu-cart{
+    	display: none;
+    }
+
+    #cart-header{
+    	display: inline;
+    	position: absolute;
+    	right: 0;
+    	margin-top: 168px;
+    	margin-right: 20px;
+    }
+
+    /*************Fotos*********/
+
+    body{
+    	background-color: black;
+    }
+
+    .news-line{
+    	background-color: black;
+    }
+
+    .fotos h2{
+    	font-size: 2.5em;
+    }
+
+    .fotoPol{
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: space-between;
+    	margin-right: 20px;
+    	padding: 0;	
+    }
+
+    .polaroid{
+    	margin-left: 20px;
+    }
+
+    div#img1, div#img2, div#img3{
+    	width: 28%
+    }
+
+    div#img1 img, div#img2 img, div#img3 img{
+    	height: 83%;
+    }
+
+/*************TICKES E VIDEO********/
+
+    #vid{
+    	float: left;
+    	width: 45%;
+    	overflow: hidden;
+    	margin-top: 40px;
+    }
+
+    #vid .vid{
+    	height: 300px;
+    }
+
+    .tickets{
+    	width: 45%;
+    	float: left;
+    	margin-top: 20px;
+    	margin-left: 5%;
+    	background-color: black;
+    }
+
+/********NEWS***********/ 
+
+    .news-line h2{
+    	font-size: 2.5em;	
+    	clear: left;
+    }
+
+    .cols{
+    	width: 25%;
+    }
+
+    .news{
+    	display: flex;
+    	flex-direction: row;
+    	clear: left;
+    }
+
+/*******FOOTER AND MAP******/
+	
+	.map h2{
+		font-size: 2.5em;
+	}
+
+    .map iframe{
+    	height:400px;
+    }
+
+    footer{
+    	clear: left;
+    }
+}

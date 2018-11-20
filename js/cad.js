@@ -3,7 +3,7 @@ document.getElementById('nacE').onclick = function(){
 	document.getElementById("cpf").disabled = true;
 	document.getElementById("cpf").value = "";
 	document.getElementById("passp").disabled = false;
-	document.getElementById("nacio").disabled = false;
+	document.getElementById("naci").disabled = false;
 	document.getElementById("label-doc").innerHTML = "Passaport:";
 };
 
@@ -11,30 +11,11 @@ document.getElementById('nacN').onclick = function(){
 	document.getElementById("cpf").disabled = false;
 	document.getElementById("passp").value = "";
 	document.getElementById("passp").disabled = true;
-	document.getElementById("nacio").disabled = true;
+	document.getElementById("naci").disabled = true;
 	document.getElementById("label-doc").innerHTML = "CPF:";
 };
 
-function fMasc(objeto,mascara){
-	obj=objeto
-	masc=mascara
-	setTimeout("fMascEx()",1);
-};
-
-function fMascEx(){
-	obj.value=masc(obj.value);
-};
-
-function mCPF(cpf){
-	cpf=cpf.replace(/\D/g,"");
-	cpf=cpf.replace(/(\d{3})(\d)/,"$1.$2");
-	cpf=cpf.replace(/(\d{3})(\d)/,"$1.$2");
-	cpf=cpf.replace(/(\d{3})(\d{1,2})$/,"$1-$2");
-	return cpf;
-};
-
-
-document.getElementById("form-cadastro").onsubmit = validaCadastro;
+document.getElementById('form-cadastro').onsubmit = validaCadastro;
 
 function validaCadastro(){
 	var contErro = 0;
@@ -103,14 +84,14 @@ function validaCadastro(){
 	}
 
 	//valida naciondalidade
-	var nacio = document.getElementById('nacio');
-	var erro_nacio = document.getElementById('msg-nacio');
-	if((nacio.value=" ") && (ncpf.disabled)){
-		erro_nacio.innerHTML = "Please, Select your place of birth."
-		erro_nacio.style.display = 'block';
+	var naci = document.getElementById('naci');
+	var erro_naci = document.getElementById('msg-nacio');
+	if((naci.value == "0") && (ncpf.disabled)){
+		erro_naci.innerHTML = "Please, Select your place of birth."
+		erro_naci.style.display = 'block';
 	}
 	else{
-		erro_nacio.style.display = "none";
+		erro_naci.style.display = "none";
 	}
 
 	//valida cep/zip
@@ -147,6 +128,17 @@ function validaCadastro(){
 	}
 	else{
 		erro_rua.style.display = "none";
+	}
+
+	var numb = document.getElementById("numb");
+	var erro_numb = document.getElementById("msg-numb");
+	if(numb.value == ""){
+		erro_numb.innerHTML = "Please, enter your number.";
+		erro_numb.style.display = 'block';
+		contErro+=1;
+	}
+	else{
+		erro_numb.style.display = "none";
 	}
 
 	// valida telefone
@@ -236,10 +228,11 @@ function validaCadastro(){
 	}
 	else{
 		erro_terms.style.display = 'none';
-	}		
+	}	
 
-	if(contErro > 0)
+	if(contErro > 0){
 		return false;
+	}
 	else
 		alert("Registration completed successfully!");
 };
