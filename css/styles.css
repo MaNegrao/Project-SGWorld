@@ -367,11 +367,11 @@ footer{
     }
 
     div#img1, div#img2, div#img3{
-    	width: 28%
+    	width: 30%
     }
 
     div#img1 img, div#img2 img, div#img3 img{
-    	height: 83%;
+    	height: 90%;
     }
 
 /*************TICKES E VIDEO********/
